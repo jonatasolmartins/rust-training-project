@@ -17,14 +17,22 @@ fn main() {
 
     /*
     This will not compile because we're traing to acces a value that has moved to another location in memory
-    let test_string = String::from("Test borrow");
-    let test_borrow = test_string;
+    let test_string = String::from("Test ownership");
+    let test_ownership = test_string;
     println!("Borrow: {}", test_string)
     */
 
-    let test_string = "Test borrow".to_string();
-    let test_borrow = test_string;
-    println!("Borrow: {}", test_borrow);
+    let test_string = "Test moving ownership".to_string();
+    let test_ownership = test_string;
+    println!("{}", test_ownership);
+
+    let some_value = "reference test";
+    let borrow_reference = &some_value;
+
+    println!(
+        "The valur: {} and the reference: {} ",
+        some_value, borrow_reference
+    );
 
     {
         let block_value = "Testimg block";
