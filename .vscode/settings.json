@@ -1,0 +1,13 @@
+{
+    "[rust]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+        // "editor.rulers": [80],
+        // "editor.tabSize": 4,
+        // "editor.insertSpaces": true,
+        // "editor.detectIndentation": false,
+        // "editor.codeActionsOnSave": {
+        //     "source.organizeImports": true
+        // }
+    },
+}
